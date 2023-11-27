@@ -21,7 +21,7 @@ Useful for NFT projects hosting on Arweave. Requires an Arweave wallet keyfile w
 
 ## Example Manifest
 
-```json
+```
 {
   manifest: 'arweave/paths',
   version: '0.1.0',
