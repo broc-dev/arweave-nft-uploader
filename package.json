@@ -1,16 +1,17 @@
 {
-  "name": "arweavefileupload",
+  "name": "arweave-manifest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "start:bun": "bun run index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "arweave": "^1.10.18"
+    "arweave": "latest"
   },
   "type": "module"
 }
