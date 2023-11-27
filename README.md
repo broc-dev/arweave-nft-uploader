@@ -7,6 +7,12 @@ Useful for NFT projects hosting on Arweave. Requires an Arweave wallet keyfile w
 
 ## Usage
 
+### Prerequisites
+1. NodeJS
+2. An Arweave wallet keyfile with AR in it
+3. Image files in the 'input' folder, in numerical order, starting from 0. For example: 0.png, 1.png, 2.png, etc.
+
+### Steps
 1. Install dependencies: `npm install`
 2. Export your Arweave wallet keyfile in the root directory and rename it to `arweave-key.json`
 3. Enter `npm run start` to upload all images and contracts to Arweave. The path manifest will be printed to the console, as well as saved in the 'out' folder.

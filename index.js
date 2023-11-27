@@ -29,8 +29,8 @@ function printStatus(response) {
 async function readFiles(folderPath) {
   let arHashes = [];
   try {
-    // Get file paths
-    const fileNames = await fs.readdirSync(folderPath)
+    // Get file paths, sort by number
+    const fileNames = (await fs.readdirSync(folderPath)).sort((a, b) => a - b);
     const filePaths = fileNames.map(fn => path.join(folderPath, fn))
     for (const [index, file] of filePaths.entries()) {
       console.log("Attempting to publish:", file)
